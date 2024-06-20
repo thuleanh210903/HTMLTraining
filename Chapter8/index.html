@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .table-1 td {
+        background-color: aqua;
+      }
+
+      caption {
+        color: aquamarine;
+      }
+
+      .table-2 td,
+      th,
+      table {
+        border: 0.1em solid #000;
+        border-collapse: collapse;
+        vertical-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table-1">
+      <caption>
+        College course
+      </caption>
+      <tr>
+        <td>Semester 1</td>
+        <td>Semester 2</td>
+      </tr>
+      <tr>
+        <td>English 1</td>
+        <td>English 2</td>
+      </tr>
+    </table>
+
+    <table class="table-2">
+      <tr>
+        <th>Course Name</th>
+        <th colspan="3">Course meeting</th>
+      </tr>
+
+      <tr>
+        <td>English</td>
+        <td>MW</td>
+        <td>12:30 - 1:45pm</td>
+        <td>Room</td>
+      </tr>
+
+      <tr>
+        <td>College algebra</td>
+        <td>TR</td>
+        <td>12:30</td>
+        <td>Room</td>
+      </tr>
+    </table>
+
+    <form accept-charset="utf-8" method="post" action="form.php" autocomplete="on">
+      <label>Username: <input name="username" type="text" size="25" /></label>
+      <label
+        >Password: <input name="password" type="password" size="25"
+      /></label>
+      <label>Please tell us your shopping experience</label>
+      <textarea name="" rows="5" cols="100"></textarea>
+      <input type="checkbox" id="webdev" value="Web Development" name="field" />
+      <label for="webdev">Web Development</label>
+      <input type="checkbox" id="program" value="Programming" name="field" />
+      <label for="program">Programming</label>
+
+      <input type="radio" id="webdev" value="Web Development" name="field" />
+      <label for="webdev">Web Development</label>
+      <input type="radio" id="program" value="Programming" name="field" />
+      <label for="program">Programming</label>
+
+
+      <select name="referral">
+        <option>Advertisement</option>
+        <option>Friend</option>
+        <option>Google</option>
+        <option>Social Media</option>
+       </select>
+    </form>
+  </body>
+</html>
